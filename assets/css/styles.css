@@ -1,0 +1,82 @@
+main {
+    display: flex
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #3d4299, #141dc7);
+    padding: 20px;
+    text-align: center;
+}
+
+#city-search-form label,
+#city-search-form input {
+    display: block;
+    margin: 20px 0;
+}
+
+#city-search-form input {
+    margin-right: 10px;
+}
+
+
+#current-weather, #future-weather {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ced4da;
+}
+
+#current-weather h2, #future-weather h2 {
+    margin-bottom: 20px;
+}
+
+#future-weather {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly in the container */
+}
+
+#future-weather > div {
+    background-color: #141dc7;
+    flex: 1; /* Each item should take up an equal amount of space */
+    padding: 20px;
+    border: 1px solid #0d447a;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#left-section {
+    flex: 1; /* Take up 1 part of the container */
+    max-width: 25%; /* Limit width to 25% of the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    flex: 3; /* Take up 3 parts of the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#search-history {
+    margin: 5px;
+    padding: 5px; /* Increase padding */
+    border: 1px solid #ced4da;
+    height: 300px; /* Set a specific height */
+    width: 150px; /* Limit width to 200px */
+    overflow-y: auto; /* Add a scrollbar if the content overflows */
+}
+
+.search-result {
+    text-align: center;
+    background-color: rgba(128, 125, 125, 0.692);
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 5px solid #2c72b8;
+    box-sizing: border-box;
+    cursor: pointer;
+}
