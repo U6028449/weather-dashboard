@@ -24,4 +24,4 @@ https://github.com/U6028449
 https://u6028449.github.io/weather-dashboard/
 
 ### screenshot
--[assets\img\Screenshot 2024-04-11 122634.png]
+assets/img/Screenshot 2024-04-11 122634.png
