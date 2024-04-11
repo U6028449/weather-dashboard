@@ -19,8 +19,9 @@ the user can also repeat the input step to see additional cities
 the previous search results are displayed on the left side of the screen and can be clicked to return to that cities weather
 
 ### Links
-[https://github.com/U6028449]
-[https://github.com/U6028449/weather-dashboard]
+https://github.com/U6028449
+
+https://u6028449.github.io/weather-dashboard/
 
 ### screenshot
 -[assets\img\Screenshot 2024-04-11 122634.png]
