@@ -1,5 +1,5 @@
 const apiKey = 'b713127d56416619655516c318a08b20';
-const apiBaseUrl = 'http://api.openweathermap.org/data/2.5/weather';
+const apiBaseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 // Get HTML elements
 const cityInput = document.getElementById('city-input');
 const citySearchForm = document.getElementById('city-search-form');
@@ -16,20 +16,16 @@ citySearchForm.addEventListener('submit', function(event) {
     console.log (city);
 });
 
-// Function to get weather data for a city
-// Function to get weather data for a city
 function getWeatherData(city) {
     const currentWeatherUrl = `${apiBaseUrl}?q=${city}&appid=${apiKey}&units=imperial`;
-    const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
 
-    // Fetch current weather data
     fetch(currentWeatherUrl)
         .then(response => response.json())
         .then(data => {
             const currentDate = new Date();
             const formattedDate = currentDate.toLocaleDateString();
 
-            // Populate currentWeather with data
             currentWeather.innerHTML = `
                 <h2>${data.name} (${formattedDate})</h2>
                 <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
